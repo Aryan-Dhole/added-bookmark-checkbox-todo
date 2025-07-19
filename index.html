@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 todo impr</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container m-5">
+        <div class="list-group">
+            <h2>TO-DO SOLO</h2>
+            <input type="text" class="form-control w-25 float-end" id="filter" placeholder="search tasks...">
+        </div>
+        <br><br>
+
+        <div class="input-group">
+            <input type="text" id="taskInput" class="form-control" placeholder="add task...">
+            <select name="category" id="category" class="form-select">
+                <option value="Personal">Personal</option>
+                <option value="Misc">Misc</option>
+                <option value="Work">Work</option>
+            </select>
+            <button class="btn btn-success btn-sm" id="addbtn">Add</button>
+        </div>
+        <br>
+
+        <select id="filterCategory" class="form-select w-auto">
+            <option value="All">All</option>
+            <option value="Personal">Personal</option>
+            <option value="Misc">Misc</option>
+            <option value="Work">Work</option>
+        </select>
+
+        <div class="input-group d-none" id="editSection">
+            <input type="text" id="editTask" class="form-control" placeholder="edit task...">
+            <select name="editCategory" id="editCategory" class="form-select">
+                <option value="Personal">Personal</option>
+                <option value="Misc">Misc</option>
+                <option value="Work">Work</option>
+            </select>
+            <button class="btn btn-success btn-sm" id="updatebtn">Update</button>
+        </div>
+
+
+        <ul class="list-group" id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
